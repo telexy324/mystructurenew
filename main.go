@@ -1,7 +1,9 @@
 package main
 
-import "mystructnew/permutation"
+import (
+	"mystructnew/permutation2"
+)
 
 func main()  {
-	permutation.Permutation(3)
+	permutation2.Permutation(3)
 }

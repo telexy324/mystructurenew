@@ -30,7 +30,11 @@ func (ints *Ints) Permute(index int) {
 	} else {
 		for i := index; i < n; i++ {
 			ints.S[i], ints.S[index] = ints.S[index], ints.S[i]
+			fmt.Println("before",index,i)
+			fmt.Println(ints.S)
 			ints.Permute(i + 1)
+			fmt.Println("after",index,i)
+			fmt.Println(ints.S)
 			ints.S[i], ints.S[index] = ints.S[index], ints.S[i]
 		}
 	}
